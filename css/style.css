@@ -33,6 +33,7 @@ html {
   height: 400px;
   font-family: "Poppins", sans-serif;
   width: 400px;
+  border-radius: 30px;
   background: #111111;
 }
 
