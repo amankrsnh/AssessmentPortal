@@ -53,3 +53,36 @@ html{
         }
     }
 }
+
+
+
+//instructions.html
+
+.imain{
+    background: rgba(255, 255, 255, 0.87);
+    font-family: $basefont;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    .inst{
+        padding: 20px;
+        li{
+            list-style: square;
+            margin: 5px 0;
+        }
+        .group{
+            margin-top: 20px;
+            @include flex();
+        }
+        button{
+            margin-top: 20px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

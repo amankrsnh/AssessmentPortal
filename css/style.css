@@ -80,4 +80,47 @@ html {
   border-radius: 30px;
   margin-top: 10px;
 }
+
+.imain {
+  background: rgba(255, 255, 255, 0.87);
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.imain .inst {
+  padding: 20px;
+}
+
+.imain .inst li {
+  list-style: square;
+  margin: 5px 0;
+}
+
+.imain .inst .group {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imain .inst button {
+  margin-top: 20px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 /*# sourceMappingURL=style.css.map */
