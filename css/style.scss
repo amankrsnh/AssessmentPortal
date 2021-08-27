@@ -152,3 +152,19 @@ html{
         }
     }
 }
+
+
+//thanks
+
+.thanks{
+    font-family: $basefont;
+    text-align: center;
+    .tick{
+        font-size: 6em;
+        font-weight: 700;
+        margin: 20px 0;
+    }
+    .greet{
+        margin-bottom: 40px;
+    }
+}

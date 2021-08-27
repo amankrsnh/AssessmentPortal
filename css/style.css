@@ -211,4 +211,19 @@ html {
   font-size: 35px;
   position: relative;
 }
+
+.thanks {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.thanks .tick {
+  font-size: 6em;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.thanks .greet {
+  margin-bottom: 40px;
+}
 /*# sourceMappingURL=style.css.map */
