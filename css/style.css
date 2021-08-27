@@ -1,0 +1,83 @@
+html {
+  background: #1a1a1a;
+}
+
+.main {
+  background: #1a1a1a;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .enter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+  font-family: "Poppins", sans-serif;
+  width: 400px;
+  background: #111111;
+}
+
+.main .enter h3 {
+  font-weight: 600;
+  color: #bebebe;
+  margin-bottom: 40px;
+}
+
+.main .enter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  padding: 0;
+}
+
+.main .enter form input {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+  width: 300px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 30px;
+  background: transparent;
+}
+
+.main .enter form button {
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */
