@@ -3,30 +3,6 @@ let qres =[];
 let ares=[];
 let i=0,score=0;
 const selectedAns = new Map();
-function getQnA(){
-    window.location="quiz.html";
-    $(document).ready(function(){
-        $.ajax({
-        type: "POST",
-        url: "ShowQuestionsControllerServlet",
-        cache: false,
-        timeout: 600000,
-        success: function(responseText)
-        {
-            var result=JSON.parse(responseText);
-            ares=JSON.parse(result.answerList);
-            qres=JSON.parse(result.questionList);
-            console.log("bcsajba");
-            showQuestion();
-        },
-        error: function(e)
-        {
-            console.log("Request not sent."+e);
-        }
-        });
-    });
-    
-}
 function showQuestion(){
     console.log("uploading");
     if(i===0)
@@ -36,9 +12,35 @@ function showQuestion(){
     else{
         enableBoth();
     }
-    var x = document.getElementsByClassName("question");
-    x.innerHtml=qres[i];
+    var x = document.getElementById("question");
+    x.innerHTML=qres[i];
+    console.log(qres[i]);
 }
+function getQnA(){
+    //window.location="quiz.html";
+    $.post("ShowQuestionsControllerServlet",null,function(responseText){
+            var result=JSON.parse(responseText);
+            ares=JSON.parse(result.answerList);
+            qres=JSON.parse(result.questionList);
+            console.log(qres);
+            console.log(ares);
+            console.log("bcsajba");
+            showQuestion();
+        });    
+}
+//function checkLoad(){
+//    
+//        $.post("ShowQuestionsControllerServlet",null,function(responseText){
+//            var result=JSON.parse(responseText);
+//            ares=JSON.parse(result.answerList);
+//            qres=JSON.parse(result.questionList);
+//            console.log(qres);
+//            console.log(ares);
+//            console.log("bcsajba");
+//            showQuestion();
+//        });
+//}
+
 function next(){
     ++i;
     showQuestion();
