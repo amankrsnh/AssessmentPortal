@@ -1,0 +1,230 @@
+html {
+  background: #1a1a1a;
+}
+
+.main {
+  background: #1a1a1a;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .enter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+  font-family: "Poppins", sans-serif;
+  width: 400px;
+  border-radius: 30px;
+  background: #111111;
+}
+
+.main .enter h3 {
+  font-weight: 600;
+  color: #bebebe;
+  margin-bottom: 40px;
+}
+
+.main .enter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  padding: 0;
+}
+
+.main .enter form input {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+  width: 300px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 30px;
+  background: transparent;
+}
+
+.main .enter form button {
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+.imain {
+  background: rgba(255, 255, 255, 0.87);
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.imain .inst {
+  padding: 20px;
+}
+
+.imain .inst li {
+  margin: 5px 0;
+}
+
+.imain .inst .group {
+  margin-top: 20px;
+  position: relative;
+  left: 50%;
+  top: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imain .inst button {
+  margin-top: 30px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.test {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.test .timer {
+  width: 100px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  float: right;
+  color: #1a1a1a;
+}
+
+.test .main {
+  width: 600px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #e4e4e4;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.test .main .question {
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.test .main .question .head {
+  font-size: 20px;
+  word-spacing: 1px;
+  font-weight: 700;
+}
+
+.test .main .question .ans {
+  padding: 20px;
+}
+
+.test .main .question .ans label {
+  margin-left: 5px;
+}
+
+.test .main .controls {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.test .main .controls button {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.test .main .controls button i {
+  font-size: 35px;
+  position: relative;
+}
+
+.thanks {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.thanks .tick {
+  font-size: 6em;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.thanks .greet {
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=style.css.map */
