@@ -1,4 +1,4 @@
-# Online AssessmentPortal: 
+# Online Assessment Portal
 
 This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Jain and Divya Joshi. The web application is made using `Java Servlets` and `Java Server Pages` as backend, `MySQL` as Database and for the front-end part, we have used `HTML`, `CSS`, `JS`, `jQuery`, and `Bootstrap`.
 
@@ -7,13 +7,13 @@ This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Ja
 
 ## Contribution of Members:
 
-* `Frontend` -> Kunal Jain
-* `Backend + Database` -> Aman Kumar Singh
-* `JavaScript Functionality` -> Divya Joshi
+* `Frontend` : ***Kunal Jain***
+* `Backend + Database` : ***Aman Kumar Singh***
+* `JavaScript Functionality` : ***Divya Joshi***
 
 ## Tech Stack:
 
-1. `Frontend`: HTML5, CSS3, Javascript
+1. `Frontend` : HTML5, CSS3, Javascript
 2. `Backend` : Java Servlets, Java Server Pages(JSP)
 3. `Database` : MySQL
 
@@ -32,12 +32,27 @@ This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Ja
 
 6. Question order shall be shuffled for each candidate appearing.✔️
 
+```
+All specifications is satisfied ✔️
+```
+
 ## Deployment:
 
+## Pages Functionality:
+   1. Login page - to take data of users attempting for assessment.
+   3. Instructions page - valid users will move forward to instructions page where they will get all instructions related to assessment.
+   4. Main Page - after reading all instrctions if user agrees that they read intructions and accept that then all valid users are allowed to give assessment.
+   5. Final Score Page - after attempting assessment in case user submits or ran out of time (in case of auto-submit) users will redirect to that page on which they will get their resultant scores.
+   
+- Assessment is of 15 minutes.
+- Assessment will auto-submit in case of no submission before times up.
+- Assessment can be submit anytime and at any point of assessment, score will calculated accordingly.
+- There is no negative marking.
+- 15 questions asked in shuffled order from question pool of 30 questions.
 
 ## Project Setup: 
 
-**Requirements:** Pre-installed `Netbeans` with `Apache Tomcat-Server` and `Mysql`.
+**Requirements:** Pre-installed `Netbeans` with `Apache Tomcat-Server` and `MySQL`.
 
 1. Clone this repository in your local machine using the following command:
 
@@ -46,6 +61,9 @@ This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Ja
     ```
 
 2. Integrate the `.jar` files available inside the cloned directory in your local machine.
+    - 5_6122867091839124788.jar
+    - gson-2.2.2.jar
+    - mysql-connector-java-8.0.26.jar
 
 3. Add these lines of code to the `web.xml` file in your project:
 -----
@@ -71,4 +89,4 @@ This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Ja
 
 4. Now just **RUN** the Project.
 
-5. This will open the website in your local machine at http://localhost:8080/ 
+5. If everything is done in order then this will open the app in your local machine at http://localhost:8080/ 
