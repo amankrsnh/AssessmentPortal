@@ -127,7 +127,7 @@ html {
 
 .test {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,7 +169,9 @@ html {
 
 .test .main {
   width: 600px;
-  height: 500px;
+  max-width: 600px;
+  height: auto;
+  min-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
