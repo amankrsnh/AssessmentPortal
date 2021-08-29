@@ -1,21 +1,21 @@
 # Online AssessmentPortal: 
 
-This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Jain and Divya Joshi. The web application is made using Java Servlets and Java Server Pages as backend, MySQL as Database and for the front-end part, we have used HTML, CSS, JS, jQuery, and Bootstrap.
+This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Jain and Divya Joshi. The web application is made using `Java Servlets` and `Java Server Pages` as backend, `MySQL` as Database and for the front-end part, we have used `HTML`, `CSS`, `JS`, `jQuery`, and `Bootstrap`.
 
 ## Demonstration Video:
 
 
 ## Contribution of Members:
 
-* Front-end -> Kunal Jain
-* Backend + Database -> Aman Kumar Singh
-* JavaScript Functionality -> Divya Joshi
+* `Frontend` -> Kunal Jain
+* `Backend + Database` -> Aman Kumar Singh
+* `JavaScript Functionality` -> Divya Joshi
 
 ## Tech Stack:
 
-1. Frontend: HTML5, CSS3, Javascript
-2. Backend : Java Servlets, Java Server Pages(JSP)
-3. Database : MySQL
+1. `Frontend`: HTML5, CSS3, Javascript
+2. `Backend` : Java Servlets, Java Server Pages(JSP)
+3. `Database` : MySQL
 
 
 ## Specifications Assigned:
@@ -41,7 +41,9 @@ This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Ja
 
 1. Clone this repository in your local machine using the following command:
 
-    `git clone https://github.com/kunal2899/AssessmentPortal.git`
+    ```git
+    git clone https://github.com/kunal2899/AssessmentPortal.git
+    ```
 
 2. Integrate the `.jar` files available inside the cloned directory in your local machine.
 
