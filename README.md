@@ -63,7 +63,6 @@ Requirements: Pre-installed Netbeans with Apche Tomcat-Server and Mysql.
         </session-timeout>
     </session-config>
 </web-app>
-
 -----
 
 4. Now just run the Project.
