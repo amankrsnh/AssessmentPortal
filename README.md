@@ -39,13 +39,13 @@ This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Ja
 
 Requirements: Pre-installed Netbeans with Apche Tomcat-Server and Mysql.
 
-1. Clone this repository in your local system.
+1. Clone this repository in your local system using the following command:
 
-git clone https://github.com/kunal2899/AssessmentPortal.git
+    git clone https://github.com/kunal2899/AssessmentPortal.git
 
 2. Integrate the jar files available in cloned directory in your project.
 
-3. Add this codes to the web.xml file in your project.
+3. Add these lines of code to the web.xml file in your project.
 -----
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
