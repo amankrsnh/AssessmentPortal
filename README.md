@@ -5,20 +5,20 @@ This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Ja
 ## Demonstration Video:
 
 
-# Contribution of Members:
+## Contribution of Members:
 
 * Front-end -> Kunal Jain
 * Backend + Database -> Aman Kumar Singh
 * JavaScript Functionality -> Divya Joshi
 
-# Tech Stack:
+## Tech Stack:
 
 1. Frontend: HTML5, CSS3, Javascript
 2. Backend : Java Servlets, Java Server Pages(JSP)
 3. Database : MySQL
 
 
-# Specifications Assigned:
+## Specifications Assigned:
 
 1. Assessment shall be MCQ pattern.✔️
 
@@ -32,10 +32,10 @@ This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Ja
 
 6. Question order shall be shuffled for each candidate appearing.✔️
 
-# Deployment:
+## Deployment:
 
 
-# Project Setup: 
+## Project Setup: 
 
 **Requirements:** Pre-installed `Netbeans` with `Apache Tomcat-Server` and `Mysql`.
 
