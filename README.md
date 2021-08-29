@@ -60,12 +60,14 @@ All specifications is satisfied ✔️
     git clone https://github.com/kunal2899/AssessmentPortal.git
     ```
 
-2. Integrate the `.jar` files available inside the cloned directory in your local machine.
+2. Open the cloned repository in Netbeans IDE.
+
+3. Integrate the `.jar` files available inside the cloned directory in your Netbean's project.
     - 5_6122867091839124788.jar
     - gson-2.2.2.jar
     - mysql-connector-java-8.0.26.jar
 
-3. Add these lines of code to the `web.xml` file in your project:
+4. Add these lines of code to the `web.xml` file in your project:
 -----
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -87,6 +89,6 @@ All specifications is satisfied ✔️
 ```
 -----
 
-4. Now just **RUN** the Project.
+5. Now just **RUN** the Project.
 
-5. If everything is done in order then this will open the app in your local machine at http://localhost:8080/ 
+6. If everything is done in order then this will open the website in your local machine at http://localhost:8080/ 
