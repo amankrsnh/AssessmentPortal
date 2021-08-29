@@ -27,7 +27,7 @@
     System.out.println("Doing");
     for(Questions q:questions)
     {
-        String a="<div class='question'><div class='head'>Q<span class='quesno'>"+i+"</span>- "+q.getQuestion()+"</div><div class='ans'><div class='agroup'><input type='radio' name='ques1' id='op1' value='"+q.getAnswer1()+"'> <label for='op1'>"+q.getAnswer1()+"</label></div><div class='agroup'><input type='radio' name='ques1' id='op2' value='"+q.getAnswer2()+"'> <label for='op2'>"+q.getAnswer2()+"</label></div><div class='agroup'><input type='radio' name='ques1' id='op3' value='"+q.getAnswer3()+"'> <label for='op3'>"+q.getAnswer3()+"</label></div><div class='agroup'><input type='radio' name='ques1' id='op4' value='"+q.getAnswer4()+"'> <label for='op4'>"+q.getAnswer4()+"</label></div></div></div>";
+        String a="<div class='question'><div class='head'>Q<span class='quesno'>"+i+"</span>- "+q.getQuestion()+"</div><div class='ans'><div class='agroup'><input type='radio' name='ques1' id='op1' value='"+q.getAnswer1()+"' onclick='saveSelectedAnswer()'> <label for='op1'>"+q.getAnswer1()+"</label></div><div class='agroup'><input type='radio' name='ques1' id='op2' value='"+q.getAnswer2()+"' onclick='saveSelectedAnswer()'> <label for='op2'>"+q.getAnswer2()+"</label></div><div class='agroup'><input type='radio' name='ques1' id='op3' value='"+q.getAnswer3()+"' onclick='saveSelectedAnswer()'> <label for='op3'>"+q.getAnswer3()+"</label></div><div class='agroup'><input type='radio' name='ques1' id='op4' value='"+q.getAnswer4()+"' onclick='saveSelectedAnswer()'> <label for='op4'>"+q.getAnswer4()+"</label></div></div></div>";
         questionList.add(a);
         answerList.add(q.getCorrectAnswer());
         i++;
