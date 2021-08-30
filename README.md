@@ -16,9 +16,9 @@ https://user-images.githubusercontent.com/67758580/131299208-4fe25312-04b3-4b0e-
 
 ## Tech Stack:
 
-1. `Frontend` : HTML5, CSS3, Javascript
-2. `Backend` : Java Servlets, Java Server Pages(JSP)
-3. `Database` : MySQL
+1. `Frontend` : HTML5, SCSS, CSS3, Javascript.
+2. `Backend` : Java Servlets, Java Server Pages(JSP).
+3. `Database` : MySQL.
 
 
 ## Specifications Assigned:
