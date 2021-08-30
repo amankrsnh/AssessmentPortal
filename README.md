@@ -40,6 +40,11 @@ All specifications are satisfied ✔️
 ```
 
 ## Deployment:
+- For Deployment, we have used `Amazon AWS` Cloud.
+
+- We created an instance of `Amazon Linux 2 AMI` and deployed our project into it.
+
+- For database, we have used `AWS RDS` and integrated this database in our project.
 
 ## Pages Functionality:
    1. `Login page` - to take the data of users attempting for assessment.
