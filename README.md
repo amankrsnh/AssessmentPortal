@@ -44,7 +44,41 @@ All specifications are satisfied ✔️
 
 - We created an instance of `Amazon Linux 2 AMI` and deployed our project into it.
 
+- Hosted on `Apache Tomcat 9.0.10 server`.
+
+- Command setup :
+
+```
+sudo su -root
+cd /var/www/html
+git clone https://github.com/kunal2899/AssessmentPortal.git
+```
+
+to install tomcat server -
+
+```
+sudo wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.52/bin/apache-tomcat-9.0.52.tar.gz.sha512
+tar -zvxf apache-tomcat-9.0.10.tar.gz
+yum install wget -y 
+```
+
+Check if server is active -
+
+```
+ps -ef | grep tomcat
+```
+
+if not active then start server -
+
+```
+cd apache-tomcat-9.0.10/bin
+./startup.sh
+```
+
 - For database, we have used `AWS RDS` and integrated this database in our project.
+ 
+- SQL database file named `source.sql` is in root folder of repository.  
+  
 
 ## Pages Functionality:
    1. `Login page` - to take the data of users attempting for assessment.
@@ -100,3 +134,6 @@ All specifications are satisfied ✔️
 5. Now just **RUN** the Project.
 
 6. If everything is done in order then this will open the website in your local machine at http://localhost:8080/ 
+
+## CI/CD
+We have not used any integration tool for continuous integration/continuous deployment compatability for our application.
