@@ -25,9 +25,13 @@
 </head>
 <body onload="getQnA()">
     <div class="test">
+        <div class="loader"><i class="fas fa-circle-notch"></i><div class="head">Your test is loading</div></div>
         <div class="main">
-            <div class="timer" id="timer"><i class="fas fa-clock"></i></div>
-            <button id="submitTest" class="btn btn-danger" onclick="saveData()">Finish Test</button>
+            <div class="upper">
+                <div class="timer"></div>
+                <div class="timer"><i class="fas fa-clock"></i> <span id="countdown">15:00</span></div>
+                <button class="btn btn-danger" onclick="saveData()">Finish Test</button>
+            </div>
             <div class="question" id="question">
 <!--                <div class="head">Q<span class="quesno">1</span>- Which of the following is another name for a "command interpreter"?</div>
                 <div class="ans">

@@ -16,10 +16,12 @@ function showQuestion(){
 }
 function getQnA(){
     $.post("ShowQuestionsControllerServlet",null,function(responseText){
+        
             var result=JSON.parse(responseText);
             ares=JSON.parse(result.answerList);
             qres=JSON.parse(result.questionList);
             showQuestion();
+            $('.loader').fadeOut('slow');
             timer();
         }); 
 }
@@ -70,18 +72,18 @@ function timer()
     const startingMinutes = 15;
     let time = startingMinutes * 60;
 
-    const countdownEl = document.getElementById('timer');
+    const countdownEl = document.getElementById('countdown');
 
     myInterval=setInterval(function updateCountdown()
     {
         
-        const minutes= Math.floor(time / 60);
+        let minutes= Math.floor(time / 60);
         let seconds = time % 60;
         if(minutes===0 && seconds===0)
             stopTimer();
         seconds = seconds < 10 ? '0' + seconds : seconds;
-
-        countdownEl.innerHTML ="<i class='fas fa-clock'></i>"+ minutes+':'+ seconds;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        countdownEl.innerHTML = minutes+':'+ seconds;
         time--;
     }, 1000);
     
