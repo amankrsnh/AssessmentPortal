@@ -29,10 +29,15 @@ function getQnA(){
 function next(){
     ++i;
     showQuestion();
+    putBackTheAns();
 }
 function previous(){
     --i;
     showQuestion();
+    putBackTheAns();
+}
+function putBackTheAns(){
+        document.querySelector( "input[value='"+ansList[i]+"']").setAttribute('checked','checked');
 }
 function disablePrevious(){
     document.getElementById("prev").disabled = true;
@@ -90,8 +95,8 @@ function timer()
 }
 function stopTimer(){
     clearInterval(myInterval);
-    alert("You are out of time.\nSubmitting your test....\nDo not close the tab until your score is visible!");
-    document.getElementById("submitTest").click();
+    alert("You ran out of time.\nSubmitting your test....\nClick Ok and Do not close the tab until we evaluate your score!");
+    saveData();
 }
 
 function enableCheck(checkbox) {
