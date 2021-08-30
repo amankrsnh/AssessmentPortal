@@ -40,10 +40,10 @@ All specifications are satisfied ✔️
 ## Deployment:
 
 ## Pages Functionality:
-   `1. Login page` - to take the data of users attempting for assessment.
-   `2. Instructions page` - valid users will move forward to the instructions page where they will get all the instructions related to assessment.
-   `3. Main Page` - after reading all the instructions, if the users agree that they have read intructions and accept them, then all valid users are allowed to give assessment.
-   `4. Final Score Page` - after attempting the assessment, in case the user submits or runs out of time (in case of auto-submit), the user will be redirected to this page on which they will get their resultant scores.
+   1. `Login page` - to take the data of users attempting for assessment.
+   2. `Instructions page` - valid users will move forward to the instructions page where they will get all the instructions related to assessment.
+   3. `Main Page` - after reading all the instructions, if the users agree that they have read intructions and accept them, then all valid users are allowed to give assessment.
+   4. `Final Score Page` - after attempting the assessment, in case the user submits or runs out of time (in case of auto-submit), the user will be redirected to this page on which they will get their resultant scores.
    
 - Assessment is of 15 minutes.
 - Assessment will auto-submit in case of no submission before times up.
@@ -64,9 +64,9 @@ All specifications are satisfied ✔️
 2. Open the cloned repository in `Netbeans IDE`.
 
 3. Integrate the `.jar` files available inside the cloned directory in your Netbean's project.
-   ` - 5_6122867091839124788.jar`
-   ` - gson-2.2.2.jar`
-   ` - mysql-connector-java-8.0.26.jar`
+   - `5_6122867091839124788.jar`
+   - `gson-2.2.2.jar`
+   - `mysql-connector-java-8.0.26.jar`
 
 4. Add these lines of code to the `web.xml` file in your project:
 -----
