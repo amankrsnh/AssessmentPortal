@@ -6,7 +6,7 @@ You can find the Portal here: http://13.233.172.37:8080/QuizApp/
 
 ## Demonstration Video:
 
-https://user-images.githubusercontent.com/67758580/131277061-9b993711-58c1-49a6-a903-fabaed2ac1af.mp4
+https://user-images.githubusercontent.com/67758580/131299208-4fe25312-04b3-4b0e-a098-63f045538731.mp4
 
 ## Contribution of Members:
 
