@@ -4,7 +4,7 @@ This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Ja
 
 ## Demonstration Video:
 
-[![demo](https://drive.google.com/file/d/17tPRmIjJ6rcfwdLWwMxbB316tgYu6Ont/view)]
+https://user-images.githubusercontent.com/67758580/131277061-9b993711-58c1-49a6-a903-fabaed2ac1af.mp4
 
 ## Contribution of Members:
 
