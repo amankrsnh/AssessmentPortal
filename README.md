@@ -46,14 +46,6 @@ All specifications are satisfied ✔️
 
 - Hosted on `Apache Tomcat 9.0.10 server`.
 
-- Command setup :
-
-```
-sudo su -root
-cd /var/www/html
-git clone https://github.com/kunal2899/AssessmentPortal.git
-```
-
 to install tomcat server -
 
 ```
@@ -73,6 +65,13 @@ if not active then start server -
 ```
 cd apache-tomcat-9.0.10/bin
 ./startup.sh
+```
+- Command setup :
+
+```
+sudo su - root
+cd apache-tomcat-9.0.10/webapps
+git clone https://github.com/kunal2899/AssessmentPortal.git
 ```
 
 - For database, we have used `AWS RDS` and integrated this database in our project.
