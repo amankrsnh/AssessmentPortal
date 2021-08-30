@@ -34,22 +34,22 @@ https://user-images.githubusercontent.com/67758580/131277061-9b993711-58c1-49a6-
 6. Question order shall be shuffled for each candidate appearing.✔️
 
 ```
-All specifications is satisfied ✔️
+All specifications are satisfied ✔️
 ```
 
 ## Deployment:
 
 ## Pages Functionality:
-   1. Login page - to take data of users attempting for assessment.
-   3. Instructions page - valid users will move forward to instructions page where they will get all instructions related to assessment.
-   4. Main Page - after reading all instrctions if user agrees that they read intructions and accept that then all valid users are allowed to give assessment.
-   5. Final Score Page - after attempting assessment in case user submits or ran out of time (in case of auto-submit) users will redirect to that page on which they will get their resultant scores.
+   `1. Login page` - to take the data of users attempting for assessment.
+   `2. Instructions page` - valid users will move forward to the instructions page where they will get all the instructions related to assessment.
+   `3. Main Page` - after reading all the instructions, if the users agree that they have read intructions and accept them, then all valid users are allowed to give assessment.
+   `4. Final Score Page` - after attempting the assessment, in case the user submits or runs out of time (in case of auto-submit), the user will be redirected to this page on which they will get their resultant scores.
    
 - Assessment is of 15 minutes.
 - Assessment will auto-submit in case of no submission before times up.
-- Assessment can be submit anytime and at any point of assessment, score will calculated accordingly.
+- Assessment can be submitted anytime and at any point of assessment, score will be calculated accordingly.
 - There is no negative marking.
-- 15 questions asked in shuffled order from question pool of 30 questions.
+- 15 questions asked in shuffled order from a question pool of 30 questions.
 
 ## Project Setup: 
 
@@ -61,12 +61,12 @@ All specifications is satisfied ✔️
     git clone https://github.com/kunal2899/AssessmentPortal.git
     ```
 
-2. Open the cloned repository in Netbeans IDE.
+2. Open the cloned repository in `Netbeans IDE`.
 
 3. Integrate the `.jar` files available inside the cloned directory in your Netbean's project.
-    - 5_6122867091839124788.jar
-    - gson-2.2.2.jar
-    - mysql-connector-java-8.0.26.jar
+   ` - 5_6122867091839124788.jar`
+   ` - gson-2.2.2.jar`
+   ` - mysql-connector-java-8.0.26.jar`
 
 4. Add these lines of code to the `web.xml` file in your project:
 -----
