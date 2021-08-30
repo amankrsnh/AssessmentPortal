@@ -2,6 +2,8 @@
 
 This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Jain and Divya Joshi. The web application is made using `Java Servlets` and `Java Server Pages` as backend, `MySQL` as Database and for the front-end part, we have used `HTML`, `CSS`, `JS`, `jQuery`, and `Bootstrap`.
 
+You can find the Portal here: http://13.233.172.37:8080/QuizApp/
+
 ## Demonstration Video:
 
 https://user-images.githubusercontent.com/67758580/131277061-9b993711-58c1-49a6-a903-fabaed2ac1af.mp4
