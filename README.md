@@ -84,12 +84,26 @@ git clone https://github.com/kunal2899/AssessmentPortal.git
    2. `Instructions page` - valid users will move forward to the instructions page where they will get all the instructions related to assessment.
    3. `Main Page` - after reading all the instructions, if the users agree that they have read intructions and accept them, then all valid users are allowed to give assessment.
    4. `Final Score Page` - after attempting the assessment, in case the user submits or runs out of time (in case of auto-submit), the user will be redirected to this page on which they will get their resultant scores.
+   5. `Admin Page` - This page is isolated from normal user environment, content of that page can be accessed by authorised users only.
    
 - Assessment is of 15 minutes.
 - Assessment will auto-submit in case of no submission before times up.
 - Assessment can be submitted anytime and at any point of assessment, score will be calculated accordingly.
 - There is no negative marking.
 - 15 questions asked in shuffled order from a question pool of 30 questions.
+
+## Admin Panel:
+http://13.233.172.37:8080/QuizApp/admin.html
+ - Firstly user have to login to admin panel with valid credentials to prove his authenticity.
+ - Only admins with valid credentials can access inner content of page.
+ - For test purpose, one of the admin's username and password given below:
+ ```
+ username:  admin@walkover.in
+ password:  admin
+ ```
+ - After successful login user redirected to results page where he can see results of all users attempted the assessment.
+ - On Results page, records of all attempts displayed with details : `Name` , `Email ID` , `Score`.
+ - In case of more than 5 records, it automatically paginates records to provide convienient environment to users.
 
 ## Project Setup: 
 
