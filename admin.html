@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.4/jquery.simplePagination.min.js"
+        integrity="sha512-J4OD+6Nca5l8HwpKlxiZZ5iF79e9sgRGSf0GxLsL1W55HHdg48AEiKCXqvQCNtA1NOMOVrw15DXnVuPpBm2mPg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.4/simplePagination.min.css"
+        integrity="sha512-85KEMf8eFSgiFrs/gGSVg0S6JqrmCtvVcA+s1PTMl/qtqH0ucmhrYrAFXock7iSjCaVcCMUNgCEF+sdQBUp7pA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <div class="log">
+            <div class="enter admin">
+                <h3>Admin Panel</h3>
+                <form>
+                    <div class="form-group"><input type="email" name="email" id="email" autocomplete="off" onchange="check()" onblur="check()"
+                            pattern="[A-z\d\._-]+@[A-z0-9-]+(\.[A-z]{2,5})(\.[A-z]{2,5})?" placeholder="Email ID" required>
+                    </div>
+                    <div class="form-group"><input type="password" name="pass" id="pass" autocomplete="off" onchange="check()" onblur="check()" placeholder="Password" required>
+                </div>
+                    <button class="btn btn-block btn-success" disabled id="sub" type="button" onclick="login()" id="proceed">Proceed</button>
+                </form>
+            </div>
+        </div>
+        <div class="loader rsl"><i class="fas fa-circle-notch"></i><div class="head">Loading Results</div></div>
+        <div class="results container">
+            <h1>Results</h1>
+            <hr>
+            <table>
+                <thead>
+                    <th>S.No.</th>
+                    <th>Name</th>
+                    <th>Email ID</th>
+                    <th>Score<br>(Out of 5)</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Aman Kumar Singh</td>
+                        <td>amankumarsingh@gmail.com</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kunal Jain</td>
+                        <td>kunaljain@gmail.com</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Divya Joshi</td>
+                        <td>divyajoshi@gmail.com</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>John Doe</td>
+                        <td>john@gmail.com</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Tom Doe</td>
+                        <td>tom@gmail.com</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Aman Kumar Singh</td>
+                        <td>amankumarsingh@gmail.com</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Kunal Jain</td>
+                        <td>kunaljain@gmail.com</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Divya Joshi</td>
+                        <td>divyajoshi@gmail.com</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>John Doe</td>
+                        <td>john@gmail.com</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Tom Doe</td>
+                        <td>tom@gmail.com</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pagination-page"></div>
+        </div>
+    </div>
+    <script>
+            $('.results').hide()
+            $('.rsl').hide()
+            var items = $("table tbody tr");
+
+            var numItems = items.length;
+            var perPage = 5;
+
+            if(numItems <= 3){
+                $(".pagination-page").hide();
+            }
+
+            items.slice(perPage).hide();
+
+            $(".pagination-page").pagination({
+                items: numItems,
+                itemsOnPage: perPage,
+                cssStyle: "dark-theme",
+
+                onPageClick: function (pageNumber) {
+                    var showFrom = perPage * (pageNumber - 1);
+                    var showTo = showFrom + perPage;
+
+                    items.hide()
+                        .slice(showFrom, showTo).show();
+                }
+            });
+
+            function check(){
+                let e = $('#email')
+                let p = $('#pass')
+                if(e.val() != "" && p.val() != ""){
+                    $('#sub').removeAttr("disabled")
+                }else{
+                    $('#sub').attr("disabled","disabled")
+                }
+            }
+
+            setInterval(()=>check(),100)
+
+            function login(){
+                let e = $('#email').val()
+                let p = $('#pass').val()
+                if(e == "admin" && p == "admin"){
+                    $('.admin').fadeOut("slow")
+                    $('.rsl').fadeIn("slow")
+                    
+                    //function call where results is called let it showResults()
+                    showResults()
+                }else{
+                    alert("Invalid Credentials")
+                }
+            }
+
+            function showResults(){
+                setTimeout(()=>{
+                    //settime out wale block ko htadena ye temp. rkha h just to test delay of data coming from server-side
+
+                    //sirf ye do line jsp wale function m paste krdena jb b results load ho jaye
+                    $('.loader').fadeOut("slow")
+                    $('.results').fadeIn("slow")
+
+
+
+                },5000)
+            }
+    </script>
+</body>
+
+</html>
