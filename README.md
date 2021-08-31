@@ -131,9 +131,33 @@ http://13.233.172.37:8080/QuizApp/admin.html
         <servlet-name>ShowQuestionsControllerServlet</servlet-name>
         <servlet-class>QuizApp.controller.ShowQuestionsControllerServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddScoreControllerServlet</servlet-name>
+        <servlet-class>QuizApp.controller.AddScoreControllerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ShowUsersControllerServlet</servlet-name>
+        <servlet-class>QuizApp.controller.ShowUsersControllerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginControllerServlet</servlet-name>
+        <servlet-class>QuizApp.controller.LoginControllerServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ShowQuestionsControllerServlet</servlet-name>
         <url-pattern>/ShowQuestionsControllerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddScoreControllerServlet</servlet-name>
+        <url-pattern>/AddScoreControllerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowUsersControllerServlet</servlet-name>
+        <url-pattern>/ShowUsersControllerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginControllerServlet</servlet-name>
+        <url-pattern>/LoginControllerServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
@@ -141,6 +165,7 @@ http://13.233.172.37:8080/QuizApp/admin.html
         </session-timeout>
     </session-config>
 </web-app>
+
 ```
 -----
 
