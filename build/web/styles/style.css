@@ -296,3 +296,46 @@ html {
             transform: rotate(360deg);
   }
 }
+
+.results {
+  font-family: "Poppins", sans-serif;
+}
+
+.results h1 {
+  color: white;
+}
+
+.results hr {
+  background: white;
+}
+
+.results table {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.results table th, .results table td {
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.results .pagination-page {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .results table {
+    font-size: 2vw;
+  }
+}

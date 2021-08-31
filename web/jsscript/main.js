@@ -68,8 +68,28 @@ function showScore(){
         if(value===can[index])
             ++score;
     });
-    document.getElementById("marks_got").innerHTML=score;
+    addScore();
     
+}
+function addScore(){
+    var name=localStorage['name'];
+    var email=localStorage['email'];
+    data={arr:[name,email,score]};
+    $.post("AddScoreControllerServlet",data,function(responseText)
+            {
+                document.getElementById("marks_got").innerHTML=score;
+            }
+           );
+}
+
+
+function addUser(anything) 
+{
+    localStorage.clear();
+    localStorage["name"]=document.querySelector("input[name='uname']").value;
+    localStorage["email"]=document.querySelector("input[name='email']").value;
+    window.location='instructions.html';
+    return false;
 }
 let myInterval;
 function timer()

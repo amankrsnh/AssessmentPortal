@@ -177,3 +177,38 @@ html{
         margin-bottom: 40px;
     }
 }
+
+//result
+
+.results{
+    font-family: $basefont;
+    h1{
+        color: white;
+    }
+    hr{
+        background: white;
+    }
+    table{
+        width: 100%;
+        color: white;
+        text-align: center;
+        th,td{
+            padding: 10px;
+            border: 2px solid white;
+        }
+    }
+    .pagination-page{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .results{
+        table{
+            font-size: 2vw;
+        }
+    }

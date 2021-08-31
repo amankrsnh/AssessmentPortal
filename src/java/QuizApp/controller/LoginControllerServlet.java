@@ -5,22 +5,20 @@
  */
 package QuizApp.controller;
 
-import QuizApp.dao.QuestionDao;
-import QuizApp.dto.Questions;
+import QuizApp.dao.AdminDao;
+import QuizApp.dto.Admin;
 import java.io.IOException;
-import java.util.ArrayList;
-import javax.servlet.RequestDispatcher;
+import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author my pc
  */
-public class ShowQuestionsControllerServlet extends HttpServlet {
+public class LoginControllerServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,27 +31,20 @@ public class ShowQuestionsControllerServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            RequestDispatcher rd=null;
-//            if(userid==null)
-//            {
-//                sess.invalidate();
-//                response.sendRedirect("accessdenied.html");
-//                return;
-//            }
-            try
-            {
-                ArrayList<Questions> questionList=QuestionDao.getQuestions();
-                request.setAttribute("result",questionList);
-                System.out.println(questionList);
-                rd=request.getRequestDispatcher("ShowQuestions.jsp");
-            }
-            catch(Exception ex)
-            {
-                ex.printStackTrace();
-            }
-            finally{
-                rd.forward(request,response);
-            }
+        PrintWriter out = response.getWriter();
+        Admin admin=new Admin(request.getParameter("userid"),request.getParameter("password"));
+        try
+        {
+            boolean result=AdminDao.validateUser(admin);
+            if(result==true)
+                out.println("success");
+            else
+                out.println("error");
+        }
+        catch(Exception ex)
+        {
+            System.out.println("Exception : "+ex);
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

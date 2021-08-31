@@ -1,12 +1,13 @@
+package QuizApp.controller;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package QuizApp.controller;
 
-import QuizApp.dao.QuestionDao;
-import QuizApp.dto.Questions;
+import QuizApp.dao.AddScore;
+import QuizApp.dao.User_scores;
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.servlet.RequestDispatcher;
@@ -14,13 +15,12 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author my pc
  */
-public class ShowQuestionsControllerServlet extends HttpServlet {
+public class ShowUsersControllerServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,7 +33,7 @@ public class ShowQuestionsControllerServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            RequestDispatcher rd=null;
+        RequestDispatcher rd=null;
 //            if(userid==null)
 //            {
 //                sess.invalidate();
@@ -42,10 +42,10 @@ public class ShowQuestionsControllerServlet extends HttpServlet {
 //            }
             try
             {
-                ArrayList<Questions> questionList=QuestionDao.getQuestions();
-                request.setAttribute("result",questionList);
-                System.out.println(questionList);
-                rd=request.getRequestDispatcher("ShowQuestions.jsp");
+                ArrayList<User_scores> userList=AddScore.getScore();
+                request.setAttribute("result",userList);
+                System.out.println(userList);
+                rd=request.getRequestDispatcher("ShowUsers.jsp");
             }
             catch(Exception ex)
             {
