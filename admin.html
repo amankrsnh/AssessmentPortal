@@ -28,7 +28,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.4/simplePagination.min.css"
         integrity="sha512-85KEMf8eFSgiFrs/gGSVg0S6JqrmCtvVcA+s1PTMl/qtqH0ucmhrYrAFXock7iSjCaVcCMUNgCEF+sdQBUp7pA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -38,16 +38,22 @@
             <div class="enter admin">
                 <h3>Admin Panel</h3>
                 <form>
-                    <div class="form-group"><input type="email" name="email" id="email" autocomplete="off" onchange="check()" onblur="check()"
-                            pattern="[A-z\d\._-]+@[A-z0-9-]+(\.[A-z]{2,5})(\.[A-z]{2,5})?" placeholder="Email ID" required>
+                    <div class="form-group"><input type="email" name="email" id="email" autocomplete="off"
+                            onchange="check()" onblur="check()"
+                            pattern="[A-z\d\._-]+@[A-z0-9-]+(\.[A-z]{2,5})(\.[A-z]{2,5})?" placeholder="Email ID"
+                            required>
                     </div>
-                    <div class="form-group"><input type="password" name="pass" id="pass" autocomplete="off" onchange="check()" onblur="check()" placeholder="Password" required>
-                </div>
-                    <button class="btn btn-block btn-success" disabled id="sub" type="button" onclick="login()" id="proceed">Proceed</button>
+                    <div class="form-group"><input type="password" name="pass" id="pass" autocomplete="off"
+                            onchange="check()" onblur="check()" placeholder="Password" required>
+                    </div>
+                    <button class="btn btn-block btn-success" disabled id="sub" type="button" onclick="login()"
+                        id="proceed">Proceed</button>
                 </form>
             </div>
         </div>
-        <div class="loader rsl"><i class="fas fa-circle-notch"></i><div class="head">Loading Results</div></div>
+        <div class="loader rsl"><i class="fas fa-circle-notch"></i>
+            <div class="head">Loading Results</div>
+        </div>
         <div class="results container">
             <h1>Results</h1>
             <hr>
@@ -125,71 +131,79 @@
         </div>
     </div>
     <script>
+        if (sessionStorage.getItem('user-status') == 'logged-in') {
+            $('.admin').hide()
+            $('.rsl').show()
+            showResults()
+        } else {
             $('.results').hide()
             $('.rsl').hide()
-            var items = $("table tbody tr");
+        }
+        var items = $("table tbody tr");
 
-            var numItems = items.length;
-            var perPage = 5;
+        var numItems = items.length;
+        var perPage = 5;
 
-            if(numItems <= 3){
-                $(".pagination-page").hide();
+        if (numItems <= 3) {
+            $(".pagination-page").hide();
+        }
+
+        items.slice(perPage).hide();
+
+        $(".pagination-page").pagination({
+            items: numItems,
+            itemsOnPage: perPage,
+            cssStyle: "dark-theme",
+
+            onPageClick: function (pageNumber) {
+                var showFrom = perPage * (pageNumber - 1);
+                var showTo = showFrom + perPage;
+
+                items.hide()
+                    .slice(showFrom, showTo).show();
             }
+        });
 
-            items.slice(perPage).hide();
-
-            $(".pagination-page").pagination({
-                items: numItems,
-                itemsOnPage: perPage,
-                cssStyle: "dark-theme",
-
-                onPageClick: function (pageNumber) {
-                    var showFrom = perPage * (pageNumber - 1);
-                    var showTo = showFrom + perPage;
-
-                    items.hide()
-                        .slice(showFrom, showTo).show();
-                }
-            });
-
-            function check(){
-                let e = $('#email')
-                let p = $('#pass')
-                if(e.val() != "" && p.val() != ""){
-                    $('#sub').removeAttr("disabled")
-                }else{
-                    $('#sub').attr("disabled","disabled")
-                }
+        function check() {
+            let e = $('#email')
+            let p = $('#pass')
+            if (e.val() != "" && p.val() != "") {
+                $('#sub').removeAttr("disabled")
+            } else {
+                $('#sub').attr("disabled", "disabled")
             }
+        }
 
-            setInterval(()=>check(),100)
+        setInterval(() => check(), 100)
 
-            function login(){
-                let e = $('#email').val()
-                let p = $('#pass').val()
-                if(e == "admin" && p == "admin"){
-                    $('.admin').fadeOut("slow")
-                    $('.rsl').fadeIn("slow")
-                    
-                    //function call where results is called let it showResults()
-                    showResults()
-                }else{
-                    alert("Invalid Credentials")
-                }
+        function login() {
+            let e = $('#email').val()
+            let p = $('#pass').val()
+            if (e == "admin" && p == "admin") {
+                $('.admin').fadeOut("slow")
+                $('.rsl').fadeIn("slow")
+
+                //function call where results is called let it showResults()
+                showResults()
+            } else {
+                alert("Invalid Credentials")
             }
+        }
 
-            function showResults(){
-                setTimeout(()=>{
-                    //settime out wale block ko htadena ye temp. rkha h just to test delay of data coming from server-side
+        function showResults() {
+            setTimeout(() => {
+                //settime out wale block ko htadena ye temp. rkha h just to test delay of data coming from server-side
 
-                    //sirf ye do line jsp wale function m paste krdena jb b results load ho jaye
-                    $('.loader').fadeOut("slow")
-                    $('.results').fadeIn("slow")
+                //sirf ye do line jsp wale function m paste krdena jb b results load ho jaye
+                $('.loader').fadeOut("slow")
+                $('.results').fadeIn("slow")
 
 
+                sessionStorage.setItem('user-status', 'logged-in');
 
-                },5000)
-            }
+
+            }, 5000)
+        }
     </script>
 </body>
 
