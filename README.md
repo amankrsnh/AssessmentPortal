@@ -103,7 +103,6 @@ http://13.233.172.37:8080/QuizApp/admin.html
  ```
  - After successful login user redirected to results page where he can see results of all users attempted the assessment.
  - On Results page, records of all attempts displayed with details : `Name` , `Email ID` , `Score`.
- - In case of more than 5 records, it automatically paginates records to provide convienient environment to users.
 
 ## Project Setup: 
 
