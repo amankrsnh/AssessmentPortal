@@ -172,6 +172,3 @@ http://13.233.172.37:8080/QuizApp/admin.html
 
 6. If everything is done in order then this will open the website in your local machine at http://localhost:8080/ 
 
-## CI/CD
-We have not used fo any integration tool for continuous integration/continuous deployment compatability for our application.
-But Trying to integrate that feature in our application soon.
