@@ -2,7 +2,7 @@
 
 This is an MCQ-based Online Assessment Portal made by Aman Kumar Singh, Kunal Jain and Divya Joshi. The web application is made using `Java Servlets` and `Java Server Pages` as backend, `MySQL` as Database and for the front-end part, we have used `HTML`, `CSS`, `JS`, `jQuery`, and `Bootstrap`.
 
-You can find the Portal here: http://13.232.39.172:8080/QuizApp/
+You can find the Portal here: http://13.232.39.172/QuizApp/
 
 ## Demonstration Video:
 
@@ -93,7 +93,7 @@ git clone https://github.com/kunal2899/AssessmentPortal.git
 - 15 questions asked in shuffled order from a question pool of 30 questions.
 
 ## Admin Panel:
-http://13.232.39.172:8080/QuizApp/admin.html
+http://13.232.39.172/QuizApp/admin.html
  - Firstly user have to login to admin panel with valid credentials to prove his authenticity.
  - Only admins with valid credentials can access inner content of page.
  - For test purpose, one of the admin's username and password given below:
