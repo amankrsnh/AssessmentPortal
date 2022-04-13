@@ -18,8 +18,8 @@ public class DbConnection {
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://database-1.cydgtythhxvu.ap-south-1.rds.amazonaws.com:3306/quizapp","admin","redhat123");
-//            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quizapp","root","redhat");
+//            con=DriverManager.getConnection("jdbc:mysql://database-1.cydgtythhxvu.ap-south-1.rds.amazonaws.com:3306/quizapp","admin","redhat123");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quizapp","root","Redhat@123");
             System.out.println("Connected Successfully to the database!");
         }
         catch(ClassNotFoundException cnfe)
